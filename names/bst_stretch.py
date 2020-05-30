@@ -6,10 +6,11 @@ class BSTNode:
 
     def insert(self, value):
         if value < self.value:
-            if self.left:
-                self.left.insert(value)
-            else:
-                self.left = BSTNode(value)
+            # if self.left:
+            #     self.left.insert(value)
+            # else:
+            #     self.left = BSTNode(value)
+            # self.left.insert(value) if value < self.left else self.left = BSTNode(value)
         else:
             if self.right:
                 self.right.insert(value)
